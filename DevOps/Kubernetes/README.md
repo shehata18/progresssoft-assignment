@@ -10,12 +10,12 @@ Kubernetes (K8s) is a container orchestration platform that automates:
 
 **Key Features**:
 
-`Automated Rollouts and Rollbacks:` Deploy changes with zero downtime
-`Service Discovery and Load Balancing:` Automatically distribute traffic across containers
-`Storage Orchestration:` Mount storage systems automatically
-`Self-Healing:` Restart failed containers, replace containers, and kill containers that don't respond
-`Secret and Configuration Management:` Manage sensitive information securely
-`Horizontal Scaling:` Scale applications up or down based on demand
+**Automated Rollouts and Rollbacks:** Deploy changes with zero downtime
+**Service Discovery and Load Balancing:** Automatically distribute traffic across containers
+**Storage Orchestration:** Mount storage systems automatically
+**Self-Healing:** Restart failed containers, replace containers, and kill containers that don't respond
+**Secret and Configuration Management:** Manage sensitive information securely
+**Horizontal Scaling:** Scale applications up or down based on demand
 
 ## Master and Worker Nodes
 
