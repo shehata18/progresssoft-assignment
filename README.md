@@ -4,7 +4,7 @@ This repository contains my complete solution for the ProgressSoft DevOps assign
 The assignment covers Linux administration, SQL, Apache Tomcat, and DevOps concepts
 including Docker, Kubernetes, and Git.
 
-The goal of this project is to demonstrate practical skills in system administration,
+The goal of this assignment is to demonstrate practical skills in system administration,
 application deployment, automation, and containerization.
 
 ---
