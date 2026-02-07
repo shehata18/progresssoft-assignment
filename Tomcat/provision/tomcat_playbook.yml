@@ -1,0 +1,29 @@
+---
+- name: Configure Tomcat Server
+  hosts: localhost
+  become: true
+
+  tasks:
+
+    - name: Ensure Tomcat directory exists
+      stat:
+        path: /opt/tomcat9
+      register: tomcat_dir
+
+    - name: Fail if Tomcat is not installed
+      fail:
+        msg: "Tomcat is not installed!"
+      when: not tomcat_dir.stat.exists
+
+    - name: Ensure Tomcat is running
+      shell: /opt/tomcat9/bin/startup.sh
+      args:
+        creates: /opt/tomcat9/logs/catalina.out
+
+    - name: Check Tomcat port
+      shell: ss -tuln | grep 7070
+      register: tomcat_port
+
+    - name: Display Tomcat status
+      debug:
+        msg: "Tomcat is running on port 7070"
